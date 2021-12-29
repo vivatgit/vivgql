@@ -1,0 +1,34 @@
+{
+  "name": "vivgql",
+  "version": "1.0.0",
+  "description": "VIV graphql utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivatgit/vivgql.git"
+  },
+  "keywords": [
+    "graphql",
+    "gql",
+    "gql2json",
+    "graphql2json",
+    "viv",
+    "vivgql",
+    "vivgraphql"
+  ],
+  "author": "Ilia Velikanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivatgit/vivgql/issues"
+  },
+  "homepage": "https://github.com/vivatgit/vivgql#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.5.0",
+    "eslint-plugin-react": "^7.28.0"
+  }
+}
