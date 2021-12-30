@@ -1,7 +1,7 @@
 const gqlQuery = `
 query Query($albumsGenre: Genre) {
     albums(genre: $albumsGenre) {
-      title
+      title      ( '"jjjj qqq ghh\\"hh "')
       tracks {
         number
         title
@@ -16,7 +16,9 @@ query Query($albumsGenre: Genre) {
 
 function gql2Json(gqlString)
 {
-    let jsonString=gqlQuery.replace(/\w/g,"__V1__");
+    let jsonString=gqlQuery.replace(/((?<![\\])['"])((?:.(?!(?<![\\])\1))*.?)\1/g,"__Q1__")
+                           //.replace(/\b\w+\b/g,"__V1__");
+    
     return jsonString;
 }
 
